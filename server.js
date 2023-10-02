@@ -5,8 +5,10 @@ const express = require('./config/express');
 
 const app = express();
 app.set('view engine', 'ejs'); //
-app.listen(9703);
-
+//app.listen(9703);
+app.listen(process.env.PORT || 9703, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
 
 module.exports = app;
-console.log("Server is running at.. http://localhost:9703");
+
