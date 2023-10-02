@@ -1,0 +1,90 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<!--Css-->
+<link rel="stylesheet" href="/contactStyle.css"/>
+    
+      <main class=”container”>
+          <div class=”jumbotron”>
+       <!--Meet Eunji-->
+       <table>
+        <tbody>
+        <tr>
+          
+         <td>
+         <h2><span lang="en-ca">Eunji (Silvia) Kwon</span></h2><br>
+         <hr style="width:70%">
+         <br>
+         <ul>
+         <li><strong>Phone </strong>|(416)000-0000</li>
+         <li><strong>Eamil </strong>| abc123@gmail.com</li>
+         <li><strong>LinkedIn </strong>| <a href="https://www.linkedin.com/in/eunjik327/"> in/eunjik327</a></li>
+         <li><strong>GitHub </strong>| <a href="https://github.com/Eunji-Kwon"> /Eunji-Kwon</li>
+         </ul></td>
+       <td><img src="imgs/profile-img.png"  class="rounded-image"  ></td>
+       </tr>	
+       </tbody>
+       </table>
+
+<!--Contact Me-->
+<div>
+  <h2 style="text-align:center; color:white;">Contact ME</h2>
+			<p style="text-align:center">If you you want to contact me, fill out the from below and sent it </p>
+</div>
+          <div id="form">
+
+            <div id="contactPage">	
+              <h2 class="message" >Send Me A Message </h2><br>
+              <form action="mailto:sandeul97@gmail.com" method="post">	
+              <fieldset id="contactForm">
+                <p>
+                    <p>
+                    <label for="txtFname">First Name  </label>
+                    <input id="txtFname" name="txtFname" size="15"  type="text" required="required">
+                    </p>
+                    <p>
+                    <label for="txtLname">Last Name  </label>
+                    <input id="txtLname" name="txtLname" size="15"  type="text" required="required">
+                    </p>
+                    <p>
+                    <label>
+                    <label for="txtPhone">Phone Number</label>
+                    <input id="txtPhone" name="txtPhone" size="30"  type="text" required="required">                  
+                    </label>
+                    </p>
+                    <p>
+                          <label>Email  
+                            <input type = "email" placeholder = "name@domain.com"
+                                required="required">
+                          </label>
+                    </p>
+                    <p>
+        
+                      <label for="txtOther">Additional Message...</label>
+                      <textarea id="txtOther" name="txtImprove" type="text" cols="20" rows="3"> </textarea>
+                    </p>
+                    
+                      <p>
+                      <input name="btnSubmit" type="submit" value="Submit" required="required" > 
+                      
+                  
+                </p>
+              </fieldset>
+              
+            </div>
+            
+            
+            </div>
+          </main>
+
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+
+   
+            
+
+

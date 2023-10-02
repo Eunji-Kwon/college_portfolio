@@ -1,0 +1,56 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+        
+    
+      <main class=”container-fluid”>
+          <div class="jumbotron">
+          
+          <div class="about" style="margin-top: 5rem;">
+        
+  
+    <p>
+      <div class="row">
+        <div class="col-6">
+          <div class="about-intro" style="padding:30px; margin-top: auto;">
+        <h1>Hi, I'm Eunji! </h1>
+        I'm a <strong>Software Developer</strong>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp; with a passion for <strong>Coding</strong></p> 
+        <button class="resume-button" onclick="openResume()">Open Resume</button>
+      </div>
+      </div>
+      <div class="col-6" style="text-align: center;">
+        <img src="imgs/profile-img.png" alt="Profile Photo" class="shadow bg-body-tertiary rounded-image" style="width: 200px; height: auto;">
+          <p>
+
+          </p>
+        <ul style="list-style: none; text-align: left; padding-left: 25%;" >
+          <li><strong>Phone </strong>|(416)000-0000</li>
+          <li><strong>Eamil </strong>| sandeul97@gmail.com</li>
+          <li><strong>LinkedIn </strong>| <a href="https://www.linkedin.com/in/eunjik327/"> in/eunjik327</a></li>
+          <li><strong>GitHub </strong>| <a href="https://github.com/Eunji-Kwon"> /Eunji-Kwon</a></li>
+          </ul></p>
+      </div>
+      
+      <div style="text-align: center; margin: 5px auto 20px; border: 1px solid #13720089; padding:5px; width:80%;">
+      <h6 style="color:seagreen">🔽 Click to view Eunji's Projects🔽</h6>
+      <h3><a href="/projects">Eunji's Projects</a></h3>
+    </div>
+  </div>
+</div>
+      </main>
+    <!--bottom nav-->
+   
+   <script>
+        function openResume() {
+            window.open('/Eunji-Kwon-Resume-SWE.pdf', '_blank');
+        }
+    </script>
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+
+   
+            
+
+
